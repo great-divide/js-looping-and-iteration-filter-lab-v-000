@@ -11,7 +11,7 @@ function findMatching(drivers, str) {
 function fuzzyMatch(drivers, str) {
     let array = []
     for (const d of drivers) {
-      if (d[0].toLowerCase() === str.toLowerCase() ) {
+      if (d.toLowerCase().slice(0, str.length) === str.toLowerCase() ) {
         array.push(d)
       }
     }
