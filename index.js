@@ -19,5 +19,11 @@ function fuzzyMatch(drivers, str) {
 }
 
 function matchName(drivers, string) {
-  
+  let array = []
+  for (const d of drivers) {
+    if (d.name.toLowerCase() === str.toLowerCase() ) {
+      array.push(d)
+    }
+  }
+  return array
 }
