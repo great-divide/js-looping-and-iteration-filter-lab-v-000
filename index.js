@@ -5,4 +5,5 @@ function findMatching(drivers, str) {
       array.push(d)
     }
   }
+  return array
 }
